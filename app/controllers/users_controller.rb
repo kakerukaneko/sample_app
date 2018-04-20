@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    redirect_to root_url and return unless @user.activated?
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
   
   def new
@@ -54,18 +54,8 @@ class UsersController < ApplicationController
                                    :password_confirmation)
     end
     
-    # beforeアクション
     
-    #ログイン済みユーザーかどうか確認
-    def logged_in_user
-      #unless=無い限り。 条件式が偽の場合の処理を記述する。
-      #if !logged_in? でもいけるが、unlessの方が簡潔に記述できる。
-      unless logged_in?
-        store_location
-        flash[:danger] = "ログインしてください!"
-        redirect_to login_url
-      end
-    end
+    #beforeフィルター
     
     #正しいユーザーかどうか確認
     def correct_user
