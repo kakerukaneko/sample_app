@@ -12,6 +12,7 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_select 'div.pagination'
     assert_select 'input[type="file"]'  
     # 無効な送信
+    #↓テストでエラーでる・・。
     post microposts_path, micropost: { content: "" }
     assert_select 'div#error_explanation'
     # 有効な送信
