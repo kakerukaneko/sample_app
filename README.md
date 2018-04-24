@@ -49,4 +49,4 @@ URL: https://kakerukaneko-rails-tutorial.herokuapp.com/
 PHPでECサイトを作った事もあるので、セッションの扱い等　共通している事も多かったが、
 テストは殆どコピペした。　２週目は自分の環境にセットして、始めたいと思う。
 何週もするうちにテストを含めて、理解する。
-![](https://github.com/kakerukaneko/sample_app/blob/master/app/assets/images/chibi1.JPG =200x300)
+![chibi](app/assets/images/chebi2.JPG = 200×300)
