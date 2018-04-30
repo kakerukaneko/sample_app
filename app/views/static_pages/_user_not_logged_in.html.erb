@@ -1,0 +1,20 @@
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("chibi1.JPG", alt: "chibi logo",width: "200",height: "300"),
+            'https://github.com/kakerukaneko' %>
+<%= link_to image_tag("chibi2.JPG", alt: "chibi logo",width: "200",height: "300"),
+            'https://github.com/kakerukaneko' %>
+ <p>↑うちで飼っていた家族のチビ。 2017年12月26日現世から去り、WEBの世界で生き続ける。</p>
+ <p>好きな食べ物: カリカリ</p>
+ <p>飼い主に呼ばれていたニックネーム: チン太郎</p>
+<% #= image_tag("kitten.jpg") %>

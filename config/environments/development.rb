@@ -27,7 +27,15 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
+<<<<<<< HEAD
   config.action_mailer.raise_delivery_errors = false
+=======
+  #0417 [add] mail setting
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :test
+  host = 'rails-tutorial-mhartl.c9users.io' # cloudIDE setting
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+>>>>>>> origin/master
 
   config.action_mailer.perform_caching = false
 
