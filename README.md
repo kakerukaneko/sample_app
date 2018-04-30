@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 # Ruby on Rails チュートリアルのサンプルアプリケーション
 
 これは、次の教材で作られたサンプルアプリケーションです。   
@@ -43,8 +39,6 @@ $ rails server
 
 詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 を参考にしてください。
-<<<<<<< HEAD
-=======
 
 2018年2月20日  Railsチュートリアル開始
 2018年4月24日  14章まで完成。
@@ -54,4 +48,3 @@ URL: https://kakerukaneko-rails-tutorial.herokuapp.com/
 PHPでECサイトを作った事もあるので、セッションの扱い等　共通している事も多かったが、
 テストは殆どコピペした。　２週目は自分の環境にセットして、始めたいと思う。
 何週もするうちにテストを含めて、理解する。
->>>>>>> origin/master
